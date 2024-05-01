@@ -21,4 +21,4 @@ jobs:
           sudo dnf install -y rpmdevtools
           python -m pip install --upgrade requests
       - name: Check new version
-        run: python3 check_new_version.py
+        run: ./check_new_version.py
