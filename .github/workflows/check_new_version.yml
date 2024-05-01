@@ -18,10 +18,7 @@ jobs:
           python-version: '3.x'
       - name: Install dependencies
         run: |
-          sudo dnf install -y python3 python3-pip
           sudo dnf install -y rpmdevtools
           python -m pip install --upgrade requests
-      - name: ls
-        run: ls
       - name: Check new version
         run: python3 check_new_version.py
